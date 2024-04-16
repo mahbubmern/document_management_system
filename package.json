@@ -1,0 +1,38 @@
+{
+  "name": "ready_package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "npm run dev --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.13",
+    "@mui/material": "^5.15.13",
+    "@mui/x-date-pickers": "^6.19.6",
+    "axios": "^1.6.7",
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^2.0.1",
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "material-react-table": "^2.12.1",
+    "mongoose": "^8.1.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.9",
+    "nodemon": "^3.0.3"
+  }
+}
